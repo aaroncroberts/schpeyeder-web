@@ -17,8 +17,8 @@ class MainPageHandler(webapp2.RequestHandler):
 
     def get(self):
 
-        template = JINJA_ENVIRONMENT.get_template('templates/drivers/index.html')
-        self.response.write(template.render())
+         template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+         self.response.write(template.render())
 
 application = webapp2.WSGIApplication([
     ('/', MainPageHandler),
