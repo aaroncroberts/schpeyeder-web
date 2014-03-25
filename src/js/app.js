@@ -21,6 +21,10 @@ angular
 			.state('drivers', {
 				url: '/drivers',
 			    views: {	
+			    	'menu': { 
+			    		templateUrl: 'partials/navigation/top-nav.html', 
+			    		controller: 'moviesController' 
+			    	},
 			        'content': { 
 			        	templateUrl: 'partials/drivers.list.html', 
 			        	controller: 'driversController' 
@@ -31,10 +35,10 @@ angular
 			.state('movies', {
 				url: '/movies',
 			    views: {
-//			    	'menu': { 
-//			    		templateUrl: 'partials/navigation/top-nav.html', 
-//			    		controller: 'moviesController' 
-//			    	},
+			    	'menu': { 
+			    		templateUrl: 'partials/navigation/top-nav.html', 
+			    		controller: 'moviesController' 
+			    	},
 			    	'content': { 
 			    		templateUrl: 'partials/movies.list.html', 
 			    		controller: 'moviesController' 
