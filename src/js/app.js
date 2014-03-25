@@ -14,23 +14,34 @@ angular
 		$urlRouterProvider.otherwise("/drivers");
 		
 		//
-		// Set up the states
+		// Set up state's routes, controllers, and views
+		//
 		$stateProvider
 			.state("drivers", {
 				url: "/drivers",
-			    views: 
-			    {
-			          "menu": { templateUrl: "partials/menu1.html", controller: "driversController" },
-			          "content": { templateUrl: "partials/drivers.list.html", controller: "driversController" }
+			    views: {
+			    	"menu": { 
+			    		templateUrl: "partials/navigation/menu-default.html", 
+			    		controller: "driversController" 
+			    	},
+			        "content": { 
+			        	templateUrl: "partials/drivers.list.html", 
+			        	controller: "driversController" 
+			        }
 			    }
 			})
 
 			.state("movies", {
 				url: "/movies",
-			    views: 
-			    {
-			          "menu": { templateUrl: "partials/menu2.html", controller: "moviesController" },
-			          "content": { templateUrl: "partials/movies.list.html", controller: "moviesController" }
+			    views: {
+			    	"menu": { 
+			    		templateUrl: "partials/navigation/menu-inverse.html", 
+			    		controller: "moviesController" 
+			    	},
+			    	"content": { 
+			    		templateUrl: "partials/movies.list.html", 
+			    		controller: "moviesController" 
+			    	}
 			    }
 			})			
 	});

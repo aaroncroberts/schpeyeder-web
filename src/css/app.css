@@ -1,0 +1,11 @@
+/* Set content below the navbar */
+body 
+{ 
+	padding-top: 70px; 	
+}
+
+/*  Adjusters */
+.adj-padding-top
+{
+	padding-top:10px;
+}

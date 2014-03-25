@@ -24,9 +24,12 @@
   	<script type="text/javascript" src="/js/app.js"></script>
   	<script type="text/javascript" src="/js/controllers.js"></script>
   	<script type="text/javascript" src="/js/services.js"></script>
+  	
+  	<!-- Local CSS files -->
+  	<link rel="stylesheet" href="/css/app.css" />
 </head>
+<section ui-view="menu" role="navigation"></section>
 <body>
-<div ui-view="menu"></div>
-<div ui-view="content"></div>
+<div ui-view="content"></div>	
 </body>
 </html>
