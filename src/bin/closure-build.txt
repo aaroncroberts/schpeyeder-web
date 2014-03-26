@@ -1,0 +1,1 @@
+closurebuilder.py --root D:\Git\schpeyeder-web\src --namespace="schpeyeder.web.app" --output_file="D:\Git\schpeyeder-web\src\js\compiled.js" --output_mode=compiled --compiler_jar="D:\Git\schpeyeder-web\src\bin\compiler.jar" --compiler_flags="--angular_pass"
