@@ -17,12 +17,24 @@ goog.scope(function(){
 	 */
 	schpeyeder.web.core.state = function($stateProvider, $locationProvider, $urlRouterProvider) {						
 
-		//
-		// For any unmatched url, redirect to /state1
-		$urlRouterProvider.otherwise("/drivers");
+        $urlRouterProvider
+	        .otherwise('/drivers');
 		
 		// Configure the State Provider
-		$stateProvider			
+		$stateProvider	
+			.state('home', {
+				url: '/',
+				views: {	
+			    	'menu': { 
+			    		templateUrl: '/partials/navigation/top-nav.html', 
+			    		controller: 'DriverCtrl' 
+			    	},
+			        'content': { 
+			        	templateUrl: '/partials/drivers.list.html', 
+			        	controller: 'DriverCtrl' 
+			        }
+			    }
+			})
 			.state('drivers', {
 				url: '/drivers',
 			    views: {	
