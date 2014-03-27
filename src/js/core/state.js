@@ -10,26 +10,19 @@ goog.scope(function(){
 	/**
 	 * @param $stateProvider
 	 * @param $locationProvider
+	 * @param $locationProvider
 	 * @ngInject
 	 * @export
 	 * @constructor
 	 */
-	schpeyeder.web.core.state = function($stateProvider, $locationProvider) {						
+	schpeyeder.web.core.state = function($stateProvider, $locationProvider, $urlRouterProvider) {						
+
+		//
+		// For any unmatched url, redirect to /state1
+		$urlRouterProvider.otherwise("/drivers");
+		
 		// Configure the State Provider
-		$stateProvider
-			.state('home', {
-				url: '/',
-			    views: {	
-			    	'menu': { 
-			    		templateUrl: '/partials/navigation/top-nav.html', 
-			    		controller: 'DriverCtrl' 
-			    	},
-			        'content': { 
-			        	templateUrl: '/partials/drivers.list.html', 
-			        	controller: 'DriverCtrl' 
-			        }
-			    }
-			})
+		$stateProvider			
 			.state('drivers', {
 				url: '/drivers',
 			    views: {	

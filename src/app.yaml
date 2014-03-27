@@ -5,6 +5,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /scripts
+  static_dir: scripts
+  
 - url: /js
   static_dir: js
   
