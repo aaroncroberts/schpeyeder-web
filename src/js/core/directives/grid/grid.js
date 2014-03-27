@@ -11,7 +11,7 @@ goog.scope(function(){
 	schpeyeder.web.core.directives.grid = function() {
 		return{
 			restrict: 'E',
-			templateUrl: '/core/directives/grid/template.html',    					
+			templateUrl: '/js/core/directives/grid/template.html',    					
 			scope: 
 			{
 			  gridData : '=',

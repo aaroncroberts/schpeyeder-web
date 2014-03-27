@@ -11,7 +11,7 @@ goog.scope(function(){
 	schpeyeder.web.core.directives.rating = function () {
 		return {
 	      restrict: 'E',
-	      templateUrl: '/core/directives/rating/template.html',    
+	      templateUrl: '/js/core/directives/rating/template.html',    
 	      scope: 
 	      {
 	    	  ratingValue: '=',

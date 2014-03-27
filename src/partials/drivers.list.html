@@ -5,16 +5,12 @@
 		</div>
 	</div>
 </div>
-<table class="table table-striped table-hover">
+<!-- <table class="table table-striped table-hover">
 <thead>
   <tr>
   	<th colspan="4">Drivers Championship Standings</th></tr>
 </thead>
-<tbody>
-	setup the repeater:
-		- foreach item in driversList, create a row
-		- set the filter method on the controller for searching
-	 
+<tbody>	 
 	<tr ng-repeat="driver in driversList | filter: search">
     	<td>{{$index + 1}}</td>
     	<td>
@@ -26,7 +22,6 @@
     	<td>{{driver.points}}</td>
   	</tr>
 </tbody>
-</table>
-<!--  
+</table> -->
 <grid grid-data="driversList" grid-columns="columns"></grid>
--->
+

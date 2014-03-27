@@ -15,8 +15,8 @@ schpeyeder.web.app = angular.module('schpeyeder.web', ['ui.router']);
 /*
  *  Services
  */
-schpeyeder.web.app.service('DriverDataService', schpeyeder.web.components.driver.DriverDataService);
-schpeyeder.web.app.service('MovieDataService', schpeyeder.web.components.movie.MovieDataService);
+schpeyeder.web.app.service('driverDataService', schpeyeder.web.components.driver.DriverDataService);
+schpeyeder.web.app.service('movieDataService', schpeyeder.web.components.movie.MovieDataService);
 
 /*
  *  Controllers
