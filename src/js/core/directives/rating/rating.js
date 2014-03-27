@@ -11,13 +11,7 @@ goog.scope(function(){
 	schpeyeder.web.core.directives.rating = function () {
 		return {
 	      restrict: 'E',
-	      templateUrl: '/core/directives/rating/template.html',
-			/*
-			 *  Variables that will be available on the directive 
-			 * 	 = : object
-		     *	 @ : string
-		     *	 & : function
-			 */	     
+	      templateUrl: '/core/directives/rating/template.html',    
 	      scope: 
 	      {
 	    	  ratingValue: '=',
