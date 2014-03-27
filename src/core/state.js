@@ -2,8 +2,8 @@
 goog.provide('schpeyeder.web.core.state');
 
 // Include dependencies
-goog.require('schpeyeder.web.components.driver.controllers.DriverCtrl');
-goog.require('schpeyeder.web.components.movie.controllers.MovieCtrl');
+goog.require('schpeyeder.web.components.driver.DriverCtrl');
+goog.require('schpeyeder.web.components.movie.MovieCtrl');
 
 goog.scope(function(){
 		
