@@ -28,7 +28,7 @@ goog.scope(function(){
 			header += '<th ng-repeat="column in gridColumns">{{column.display}}</th>';
 		
 			// Create the body rows
-			body += '<tr class="form-group" ng-repeat="row in gridData | filter: search">';
+			body += '<tr class="form-group" ng-repeat="row in gridData">';
 			
 			for( column in columns ){
 				body += '<td editable edit-model="row.' + columns[column].key + '">' +
