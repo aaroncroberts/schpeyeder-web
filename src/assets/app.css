@@ -35,3 +35,10 @@ ul.rating {
 .rating .filled {
   color: #21568b;
 }
+
+/* Grid */
+.grid-container
+{
+	max-height: 750px;
+	overflow-y:scroll;
+}
