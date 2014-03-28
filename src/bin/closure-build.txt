@@ -1,4 +1,0 @@
-closurebuilder.py --root D:\Git\schpeyeder-web\src --namespace="schpeyeder.web.app" --output_file="D:\Git\schpeyeder-web\src\js\compiled.js" --output_mode=compiled --compiler_jar="D:\Git\schpeyeder-web\src\bin\compiler.jar" --compiler_flags="--angular_pass"
-
-python closurebuilder.py --root /Volumes/HDD\ STORAGE/documents/development/schpeyeder-web/src/ --namespace="schpeyeder.web.app" --output_file="/Volumes/HDD STORAGE/documents/development/schpeyeder-web/src/js/compiled.js" --output_mode=compiled --compiler_jar="/Volumes/HDD STORAGE/documents/development/schpeyeder-web/src/bin/compiler.jar" --compiler_flags="--angular_pass"
-

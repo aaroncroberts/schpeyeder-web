@@ -13,7 +13,7 @@ python ${PROJECT_ROOT}/lib/closure-library/closure/bin/build/closurebuilder.py \
 --namespace="schpeyeder.web.app" \
 --output_file="${PROJECT_ROOT}/scripts/compiled.js" \
 --output_mode=compiled \
---compiler_jar="compiler.jar" \
+--compiler_jar="compiler/compiler.jar" \
 --compiler_flags="--angular_pass"
 
 echo "Compilation complete!"
