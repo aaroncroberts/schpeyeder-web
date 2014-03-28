@@ -22,19 +22,6 @@ goog.scope(function(){
 		
 		// Configure the State Provider
 		$stateProvider	
-			.state('home', {
-				url: '/',
-				views: {	
-			    	'menu': { 
-			    		templateUrl: '/app/components/driver/list/top-nav.html', 
-			    		controller: 'DriverCtrl' 
-			    	},
-			        'content': { 
-			        	templateUrl: '/app/components/driver/driver/list/driver.html', 
-			        	controller: 'DriverCtrl' 
-			        }
-			    }
-			})
 			.state('drivers', {
 				url: '/drivers',
 			    views: {	
