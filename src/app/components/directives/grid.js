@@ -1,5 +1,5 @@
 // Create the Closure namespace
-goog.provide('schpeyeder.web.core.directives.grid')
+goog.provide('schpeyeder.web.components.directives.grid')
 
 goog.scope(function(){
 		
@@ -8,10 +8,10 @@ goog.scope(function(){
 	 * @export
 	 * @constructor
 	 */
-	schpeyeder.web.core.directives.grid = function() {
+	schpeyeder.web.components.directives.grid = function() {
 		return{
 			restrict: 'E',
-			templateUrl: '/js/core/directives/grid/template.html',    					
+			templateUrl: '/app/components/directives/grid.template.html',    					
 			scope: 
 			{
 			  gridData : '=',

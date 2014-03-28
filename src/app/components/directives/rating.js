@@ -1,5 +1,5 @@
 // Create the Closure namespace
-goog.provide('schpeyeder.web.core.directives.rating')
+goog.provide('schpeyeder.web.components.directives.rating')
 
 goog.scope(function(){
 		
@@ -8,10 +8,10 @@ goog.scope(function(){
 	 * @export
 	 * @constructor
 	 */
-	schpeyeder.web.core.directives.rating = function () {
+	schpeyeder.web.components.directives.rating = function () {
 		return {
 	      restrict: 'E',
-	      templateUrl: '/js/core/directives/rating/template.html',    
+	      templateUrl: '/app/components/directives/rating.template.html',    
 	      scope: 
 	      {
 	    	  ratingValue: '=',

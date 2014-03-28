@@ -8,14 +8,11 @@ handlers:
 - url: /scripts
   static_dir: scripts
   
-- url: /js
-  static_dir: js
-  
-- url: /lib
-  static_dir: lib
-  
-- url: /css
-  static_dir: css
+- url: /app
+  static_dir: app
+   
+- url: /assets
+  static_dir: assets
 
 - url: /partials
   static_dir: partials

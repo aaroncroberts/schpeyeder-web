@@ -1,5 +1,5 @@
 // Create the namespace
-goog.provide('schpeyeder.web.core.state');
+goog.provide('schpeyeder.web.state');
 
 // Include dependencies
 goog.require('schpeyeder.web.components.driver.DriverCtrl');
@@ -15,7 +15,7 @@ goog.scope(function(){
 	 * @export
 	 * @constructor
 	 */
-	schpeyeder.web.core.state = function($stateProvider, $locationProvider, $urlRouterProvider) {						
+	schpeyeder.web.state = function($stateProvider, $locationProvider, $urlRouterProvider) {						
 
         $urlRouterProvider
 	        .otherwise('/drivers');
@@ -26,11 +26,11 @@ goog.scope(function(){
 				url: '/',
 				views: {	
 			    	'menu': { 
-			    		templateUrl: '/partials/navigation/top-nav.html', 
+			    		templateUrl: '/app/components/driver/list/top-nav.html', 
 			    		controller: 'DriverCtrl' 
 			    	},
 			        'content': { 
-			        	templateUrl: '/partials/drivers.list.html', 
+			        	templateUrl: '/app/components/driver/driver/list/driver.html', 
 			        	controller: 'DriverCtrl' 
 			        }
 			    }
@@ -39,11 +39,11 @@ goog.scope(function(){
 				url: '/drivers',
 			    views: {	
 			    	'menu': { 
-			    		templateUrl: '/partials/navigation/top-nav.html', 
+			    		templateUrl: '/app/components/driver/list/top-nav.html', 
 			    		controller: 'DriverCtrl' 
 			    	},
 			        'content': { 
-			        	templateUrl: '/partials/drivers.list.html', 
+			        	templateUrl: '/app/components/driver/list/driver.html', 
 			        	controller: 'DriverCtrl' 
 			        }
 			    }
@@ -52,11 +52,11 @@ goog.scope(function(){
 				url: '/movies',
 			    views: {
 			    	'menu': { 
-			    		templateUrl: '/partials/navigation/top-nav.html', 
+			    		templateUrl: '/app/components/driver/list/top-nav.html', 
 			    		controller: 'MovieCtrl' 
 			    	},
 			    	'content': { 
-			    		templateUrl: '/partials/movies.list.html', 
+			    		templateUrl: '/app/components/movie/list/movie.html', 
 			    		controller: 'MovieCtrl' 
 				    	}
 				    }

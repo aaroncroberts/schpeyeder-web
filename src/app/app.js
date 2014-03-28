@@ -6,9 +6,9 @@ goog.require('schpeyeder.web.components.driver.DriverDataService')
 goog.require('schpeyeder.web.components.driver.DriverCtrl')
 goog.require('schpeyeder.web.components.movie.MovieDataService')
 goog.require('schpeyeder.web.components.movie.MovieCtrl')
-goog.require('schpeyeder.web.core.directives.rating')
-goog.require('schpeyeder.web.core.directives.grid')
-goog.require('schpeyeder.web.core.state')
+goog.require('schpeyeder.web.components.directives.rating')
+goog.require('schpeyeder.web.components.directives.grid')
+goog.require('schpeyeder.web.state')
 
 schpeyeder.web.app = angular.module('schpeyeder.web', ['ui.router']);
 
@@ -27,10 +27,10 @@ schpeyeder.web.app.controller('MovieCtrl', schpeyeder.web.components.movie.Movie
 /*
  * 	Directives
  */
-schpeyeder.web.app.directive('rating', schpeyeder.web.core.directives.rating);
-schpeyeder.web.app.directive('grid', schpeyeder.web.core.directives.grid);
+schpeyeder.web.app.directive('rating', schpeyeder.web.components.directives.rating);
+schpeyeder.web.app.directive('grid', schpeyeder.web.components.directives.grid);
 
 /*
  * 	Routing
  */
-schpeyeder.web.app.config(schpeyeder.web.core.state);
+schpeyeder.web.app.config(schpeyeder.web.state);
